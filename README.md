@@ -73,3 +73,55 @@ The cleaned project dataset is included in this repository:
 `excel/shipment level.xlsx`
 
 For dataset details, preparation methodology, sources, citation, and data-usage information, see [`DATASET.md`](DATASET.md).
+
+## Key Findings
+
+### Q1. Overall Delivery Performance
+
+Delivery performance across the 7,030 shipment-level records was predominantly positive:
+
+- **63.29%** of shipments were delivered **On Time**.
+- **25.28%** were delivered **Early**.
+- **11.44%** were delivered **Late**.
+
+Although the majority of shipments met or beat their scheduled delivery dates, **804 shipments were late**, indicating a meaningful level of delivery risk that warrants further investigation across countries, shipment modes, vendors, and product categories.
+
+### Q2. Country Delivery Risk
+
+Delivery risk varied considerably across countries, with several countries showing substantially higher late-delivery rates than the overall dataset.
+
+Among countries with at least 20 shipments:
+
+- **Burundi** recorded the highest late-delivery rate at **29.5%** (18 late shipments out of 61).
+- **Congo, DRC** followed at **21.2%** (24 late shipments out of 113).
+- **South Africa** recorded a **19.1%** late-delivery rate, representing **111 late shipments** across 581 shipments.
+- **Mozambique** recorded a **17.8%** late-delivery rate, with **72 late shipments** across 404 shipments.
+- **Nigeria**, despite having a lower late-delivery rate of **12.1%**, recorded **112 late shipments**, the highest late-shipment count among the countries shown.
+
+The results show that country-level delivery risk should be evaluated using both **late-delivery rate and shipment volume**. Smaller countries can have high late-delivery rates, while higher-volume countries can contribute a larger number of late shipments despite having lower rates.
+
+### Q3. Shipment Mode Performance
+
+Delivery performance differed substantially across shipment modes:
+
+- **Truck** had the highest late-delivery rate at **20.7%**.
+- **Ocean** followed at **19.3%**.
+- **Air Charter** recorded a **10.5%** late-delivery rate.
+- **Air** recorded a lower late-delivery rate of **8.5%**.
+- Shipments with **N/A** as the recorded mode had a **1.3%** late-delivery rate.
+
+The results indicate that **Truck and Ocean shipments experienced the highest observed late-delivery rates**, while Air shipments showed considerably lower delay rates. These differences highlight shipment mode as an important area for further operational investigation.
+
+### Q4. Shipment Size and Freight-Cost Efficiency
+
+Freight-cost efficiency improved substantially as shipment size increased among shipments with resolved freight costs:
+
+- The **smallest shipment quartile** had an average freight cost per unit of **$67.53**.
+- This decreased to **$2.23** in Q2 and **$1.31** in Q3.
+- The **largest shipment quartile** had the lowest average freight cost per unit at just **$0.31**.
+
+Average total freight cost increased with shipment size, from **$2,640** for the smallest quartile to **$18,211** for the largest. However, the much larger shipment quantities resulted in substantially lower freight cost per unit.
+
+Late-delivery rates remained relatively low across all four quartiles, ranging from **1.2% to 2.9%**, suggesting that the improvement in freight-cost efficiency with larger shipments was not accompanied by a major increase in late deliveries within this analysis scope.
+
+Cost comparisons were limited to shipments with **available freight-cost data**, as missing freight values were not treated as zero.
