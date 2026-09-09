@@ -18,3 +18,16 @@ The analysis is designed to answer eight key business questions:
 - How has delivery performance changed over time?
 - Which ARV brands show higher or lower delivery risk?
 - Which vendors show stronger or weaker operational performance?
+
+## Objectives
+
+The project aims to:
+
+- Measure overall delivery performance and identify the extent and severity of late shipments.
+- Identify countries and shipment modes associated with higher delivery risk.
+- Evaluate how shipment size affects freight-cost efficiency.
+- Examine vendor performance and the relationship between vendors and shipment modes.
+- Analyse changes in delivery performance over time.
+- Identify product-level differences in delivery risk across ARV brands.
+- Compare vendors across shipment volume, delivery performance, and freight-cost efficiency.
+- Present the findings through interactive Tableau dashboards to support operational decision-making.
