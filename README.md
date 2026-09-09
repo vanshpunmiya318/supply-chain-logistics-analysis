@@ -32,10 +32,12 @@ The project aims to:
 - Compare vendors across shipment volume, delivery performance, and freight-cost efficiency.
 - Present the findings through interactive Tableau dashboards to support operational decision-making.
 
-### Project Dataset
+## Project Dataset
 
 The original shipment-level data was refined and prepared in Excel to create the project-specific **Shipment Level** dataset used for the Tableau analysis.
 
 The cleaned project dataset is included in this repository:
 
 `excel/shipment level.xlsx`
+
+For dataset details, preparation methodology, sources, citation, and data-usage information, see [`DATASET.md`](DATASET.md).
