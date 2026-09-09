@@ -32,6 +32,38 @@ The project aims to:
 - Compare vendors across shipment volume, delivery performance, and freight-cost efficiency.
 - Present the findings through interactive Tableau dashboards to support operational decision-making.
 
+## Tools & Methodology
+
+### Tools
+
+- **Microsoft Excel** — used for data preparation, restructuring, calculated fields, data validation, and creation of the project-specific shipment-level dataset.
+- **Tableau** — used for exploratory analysis, calculated fields, visualisation, dashboard development, and final presentation of the findings.
+
+### Methodology
+
+The project followed a structured data-preparation and analysis workflow:
+
+1. **Data Preparation**  
+   The original SCMS shipment data was reviewed and refined in Excel. Additional calculated fields were created to support delivery-performance, shipment-size, freight-cost, vendor, and product-level analysis.
+
+2. **Shipment-Level Transformation**  
+   The data was consolidated to a shipment-level dataset so that measures such as delivery performance and freight cost could be analysed consistently at the appropriate shipment level.
+
+3. **Data Validation**  
+   Key calculations and assumptions were reviewed during the analysis. Particular attention was given to freight-cost availability, shipment-level freight resolution, shipment-size effects, and product/brand classification.
+
+4. **Exploratory Analysis**  
+   The refined dataset was analysed across delivery status, country, shipment mode, shipment size, vendor, time period, and ARV brand.
+
+5. **Visualisation & Dashboard Development**  
+   The validated findings were developed into three Tableau dashboards:
+   - **Supply Chain Overview**
+   - **Mode & Cost Analysis**
+   - **Vendor & Product Analysis**
+
+6. **Validation & Refinement**  
+   Where initial analytical approaches produced misleading or incomplete comparisons, they were reviewed and refined before the final findings and dashboards were produced.
+
 ## Project Dataset
 
 The original shipment-level data was refined and prepared in Excel to create the project-specific **Shipment Level** dataset used for the Tableau analysis.
