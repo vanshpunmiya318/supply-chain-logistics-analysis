@@ -125,3 +125,14 @@ Average total freight cost increased with shipment size, from **$2,640** for the
 Late-delivery rates remained relatively low across all four quartiles, ranging from **1.2% to 2.9%**, suggesting that the improvement in freight-cost efficiency with larger shipments was not accompanied by a major increase in late deliveries within this analysis scope.
 
 Cost comparisons were limited to shipments with **available freight-cost data**, as missing freight values were not treated as zero.
+
+### Q5. Vendor and Shipment Mode Interaction
+
+Among the highest-volume vendors, delivery performance varied across shipment modes:
+
+- **SCMS from RDC** operated across multiple shipment modes, with late-delivery rates ranging from **0.9% for N/A shipments** to **23.6% for Truck shipments**. Its Air and Air Charter shipments recorded rates of **14.0%** and **10.9%**, respectively.
+- **Aurobindo Pharma Limited** also used multiple modes, with a **12.0%** late-delivery rate for Air shipments compared with **29.2%** for Ocean shipments.
+- Several vendors operated predominantly through a single shipment mode, including **Orgenics (Air: 13.7%)**, **S. BUYS (Truck: 5.6%)**, and **CIPLA (Air: 9.7%)**.
+- Other high-volume vendors recorded comparatively low late-delivery rates, including **Trinity Biotech (0.4%)**, **MYLAN (0.9%)**, **Hetero (1.2%)**, **ABBVIE (1.2%)**, and **Chembio Diagnostics (0.9%)**.
+
+The analysis indicates that vendor delivery performance should be considered alongside **shipment mode**, rather than evaluating vendors independently of the transportation method they use.
