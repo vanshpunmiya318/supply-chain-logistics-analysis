@@ -31,3 +31,29 @@ The project aims to:
 - Identify product-level differences in delivery risk across ARV brands.
 - Compare vendors across shipment volume, delivery performance, and freight-cost efficiency.
 - Present the findings through interactive Tableau dashboards to support operational decision-making.
+
+## Dataset & Source
+
+This project uses the **Supply Chain Shipment Pricing Data** dataset, containing historical shipment-level information from the **USAID Supply Chain Management System (SCMS)**.
+
+The dataset includes information relating to shipment dates, delivery performance, shipment mode, vendor, country, shipment size, freight cost, and product characteristics.
+
+### Sources
+
+**Kaggle dataset used for this project:**  
+[Supply Chain Shipment Pricing Data](https://www.kaggle.com/datasets/sawandikirby/supply-chain-shipment-pricing-data)
+
+**Original USAID dataset:**  
+[USAID Supply Chain Shipment Pricing Data](https://data.usaid.gov/d/a3rc-nmf6)
+
+The Kaggle version was used as the accessible dataset for this project, while the USAID source is provided for original-source attribution.
+
+> **Data usage note:** The Kaggle re-upload states that the original source dataset did not include an explicit license and that the re-upload is intended for educational, non-commercial, and analytical demonstration purposes. The original data rights remain with the original data owners. :contentReference[oaicite:2]{index=2}
+
+### Project Dataset
+
+The original shipment-level data was refined and prepared in Excel to create the project-specific **Shipment Level** dataset used for the Tableau analysis.
+
+The cleaned project dataset is included in this repository:
+
+`excel/shipment level.xlsx`
