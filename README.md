@@ -1,3 +1,20 @@
 # Supply Chain & Logistics Performance Analysis
 
 Supply chain and logistics performance analysis using Excel and Tableau, focused on delivery performance, shipment modes, freight costs, vendors, countries, shipment size, and product-level risk.
+
+## Business Problem
+
+Supply chain operations require a balance between delivery reliability, transportation cost, shipment size, vendor performance, and product availability.
+
+This project analyses historical shipment data to identify where delivery delays occur and how operational factors such as shipment mode, country, shipment size, vendor, and product characteristics relate to delivery performance and freight costs.
+
+The analysis is designed to answer eight key business questions:
+
+- How is overall delivery performance distributed?
+- Which countries show higher delivery risk?
+- How do shipment modes differ in delivery performance?
+- How does shipment size affect freight-cost efficiency?
+- How do vendors and shipment modes interact?
+- How has delivery performance changed over time?
+- Which ARV brands show higher or lower delivery risk?
+- Which vendors show stronger or weaker operational performance?
