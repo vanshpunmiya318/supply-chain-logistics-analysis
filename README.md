@@ -114,17 +114,17 @@ The results indicate that **Truck and Ocean shipments experienced the highest ob
 
 ### Q4. Shipment Size and Freight-Cost Efficiency
 
-Freight-cost efficiency improved substantially as shipment size increased among shipments with resolved freight costs:
+Freight-cost efficiency improved substantially as shipment size increased, among shipments with resolved freight costs (n = 6,198):
 
-- The **smallest shipment quartile** had an average freight cost per unit of **$67.53**.
-- This decreased to **$2.23** in Q2 and **$1.31** in Q3.
-- The **largest shipment quartile** had the lowest average freight cost per unit at just **$0.31**.
+* The **smallest shipment quartile** had an average freight cost per unit of **$83.81**.
+* This fell to **$3.01** in Q2 and **$1.00** in Q3.
+* The **largest shipment quartile** had the lowest average freight cost per unit at **$0.28**.
 
-Average total freight cost increased with shipment size, from **$2,640** for the smallest quartile to **$18,211** for the largest. However, the much larger shipment quantities resulted in substantially lower freight cost per unit.
+Average total freight cost increased with shipment size, from **$2,758** for the smallest quartile to **$20,658** for the largest. However, the much larger shipment quantities more than offset the increase in total freight cost, resulting in substantially lower freight cost per unit for larger shipments.
 
-Late-delivery rates remained relatively low across all four quartiles, ranging from **1.2% to 2.9%**, suggesting that the improvement in freight-cost efficiency with larger shipments was not accompanied by a major increase in late deliveries within this analysis scope.
+Late-delivery rates also increased with shipment size, from **5.1%** in the smallest quartile to **17.9%** in the largest. This indicates a trade-off within this analysis: larger shipments were substantially more freight-efficient per unit but had higher observed late-delivery rates.
 
-Cost comparisons were limited to shipments with **available freight-cost data**, as missing freight values were not treated as zero.
+Cost comparisons were limited to shipments with **available freight-cost data**, consistent with the approach used in Q3. Missing freight values were not treated as zero.
 
 ### Q5. Vendor and Shipment Mode Interaction
 
