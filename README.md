@@ -136,3 +136,49 @@ Among the highest-volume vendors, delivery performance varied across shipment mo
 - Other high-volume vendors recorded comparatively low late-delivery rates, including **Trinity Biotech (0.4%)**, **MYLAN (0.9%)**, **Hetero (1.2%)**, **ABBVIE (1.2%)**, and **Chembio Diagnostics (0.9%)**.
 
 The analysis indicates that vendor delivery performance should be considered alongside **shipment mode**, rather than evaluating vendors independently of the transportation method they use.
+
+### Q6. Delivery Performance Over Time
+
+Delivery performance varied considerably across the 2006–2015 period, with a sharp increase in late-delivery rates from 2010 onwards:
+
+- The late-delivery rate increased from **3.4% in 2009** to **13.5% in 2010**.
+- **2011 recorded the highest late-delivery rate at 22.0%**, making it the main anomaly in the period.
+- The rate then fell to **6.9% in 2012**, before remaining elevated at **17.1% in 2013** and **17.6% in 2014**.
+- Investigation of the 2011 peak found that **SCMS from RDC accounted for 123 of the 181 late shipments**, representing **68% of all late shipments that year**. Across its 328 shipments in 2011, the vendor recorded a **37.5% late-delivery rate**.
+- SCMS from RDC's elevated late-delivery rate was observed across the main shipment modes it used: **Air (34.9%)**, **Air Charter (37.5%)**, and **Truck (39.9%)**, indicating that the 2011 issue was not isolated to a single transportation mode.
+- The vendor's 2011 late shipments were also spread across multiple countries, including **Nigeria, Zambia, Uganda, Zimbabwe, and Côte d'Ivoire**.
+- A further country-level investigation found that **Uganda recorded 16 late shipments out of 41 in 2011 (39.0%)**, with all 16 of those late shipments associated with SCMS from RDC.
+
+The analysis therefore identified **2011 as the peak period of delivery disruption**, with SCMS from RDC representing the largest identified contributor to the year's late shipments. South Africa also recorded an elevated 2011 late-delivery rate of **26.3% (50 of 190 shipments)**, representing a separate contributor not explained by SCMS from RDC.
+
+**Note:** The 2006 rate of 0.0% was based on only **52 shipments** and should be interpreted cautiously.
+
+### Q7. Within-ARV Brand Segmentation
+
+Among ARV shipments with a single recorded brand, delivery performance varied across brands, although the majority of shipments were concentrated in the Generic category:
+
+- The analysis identified **5,472 ARV shipments** in total.
+- **197 shipments (3.6%)** contained multiple brand values and were excluded from the brand-level comparison, leaving **5,275 single-brand shipments**.
+- Applying a minimum reporting threshold of **20 shipments per brand** resulted in **12 brands** being included in the comparison.
+- **Generic** accounted for **4,480 shipments** and had a late-delivery rate of **14.7%**, making it by far the largest ARV brand category.
+- Other qualifying brands included **Aluvia (177 shipments, 9.0% late)**, **Kaletra (142, 2.8%)**, **Norvir (109, 0.0%)**, **Videx (56, 1.7%)**, **Truvada (54, 0.0%)**, **Stocrin/Sustiva (31, 0.0%)**, **Viread (26, 3.0%)**, **Prezista (24, 0.0%)**, **Invirase (21, 0.0%)**, **Isentress (21, 0.0%)**, and **Ziagen (20, 4.3%)**.
+- Several brands recorded a **0.0% late-delivery rate**, meaning that no late shipments were observed for those brands in the analysed dataset. These results should not be interpreted as evidence of perfect or consistently superior reliability, particularly for brands represented by relatively small shipment volumes.
+
+The analysis used **Brand** as the segmentation field after testing several alternatives. Molecule/Test Type, Manufacturing Site, and Dosage Form were rejected because they contained substantially more mixed-value shipments, while Brand had the lowest proportion of mixed records at **3.6%**.
+
+The results provide a more detailed view of delivery performance within the ARV product group while applying a minimum shipment threshold to avoid comparisons based on very small shipment volumes.
+
+### Q8. Vendor Operational Comparison
+
+The final vendor comparison combines shipment volume, late-delivery rate, and weighted freight cost per unit to provide a broader view of operational performance across the 10 vendors with at least 100 shipments:
+
+- **SCMS from RDC** handled the highest shipment volume with **3,440 shipments**, recording a **16.2% late-delivery rate** and a weighted freight cost per unit of **$0.259**.
+- **Aurobindo Pharma Limited** handled **541 shipments**, with a **17.0% late-delivery rate** and a weighted freight cost per unit of **$0.291**.
+- **Orgenics, Ltd** recorded **667 shipments** and a **13.6% late-delivery rate**, but its weighted freight cost per unit was substantially higher at **$5.157**.
+- **Trinity Biotech, Plc** recorded a **0.4% late-delivery rate** across **285 shipments**, with a weighted freight cost per unit of **$3.643**.
+- **S. Buys Wholesaler** recorded **194 shipments**, a **4.6% late-delivery rate**, and the lowest weighted freight cost per unit in the comparison at **$0.011**.
+- The remaining vendors showed different combinations of delivery reliability and freight cost, demonstrating that vendor performance cannot be described using a single operational measure.
+
+The comparison uses a **minimum threshold of 100 shipments per vendor** to focus on vendors with a meaningful level of shipment activity. Freight cost per unit was calculated using a **volume-weighted approach**, based on total freight cost divided by total shipment quantity, rather than averaging individual shipment-level cost-per-unit values.
+
+The results highlight the importance of considering **shipment volume, delivery reliability, and freight efficiency together** when assessing vendor operations. A vendor with a lower freight cost per unit may still have a higher late-delivery rate, while a vendor with a lower late-delivery rate may operate at a substantially higher freight cost per unit.
