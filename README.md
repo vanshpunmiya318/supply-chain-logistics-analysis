@@ -184,3 +184,67 @@ The final vendor comparison combines shipment volume, late-delivery rate, and we
 The comparison uses a **minimum reporting threshold of 100 shipments per vendor** to focus on vendors with a meaningful level of shipment activity. This threshold is a reporting criterion rather than a measure of statistical significance. Freight cost per unit was calculated using a **volume-weighted approach**, based on total freight cost divided by total shipment quantity, rather than averaging individual shipment-level cost-per-unit values. Freight-cost metrics were calculated using shipments with **resolved freight-cost data**; missing freight values were not treated as zero.
 
 The results highlight the importance of considering **shipment volume, delivery reliability, and freight efficiency together** when assessing vendor operations. A vendor with a lower freight cost per unit may still have a higher late-delivery rate, while a vendor with a lower late-delivery rate may operate at a substantially higher freight cost per unit.
+
+## Business Recommendations
+
+Based on the findings across the eight analyses, the following operational actions could be considered:
+
+1. **Review high-risk shipment modes**  
+   Truck and Ocean shipments recorded the highest observed late-delivery rates. These modes should be reviewed further to identify operational bottlenecks, route-level issues, or other factors contributing to delays.
+
+2. **Prioritise high-volume countries with significant late-shipment counts**  
+   Country-level risk should be assessed using both late-delivery rates and shipment volumes. High-volume countries such as Nigeria can generate a substantial number of late shipments even when their percentage rate is lower than that of smaller countries.
+
+3. **Investigate recurring vendor and country disruption patterns**  
+   The 2011 analysis identified SCMS from RDC as the largest identified contributor to late shipments that year, while South Africa represented a separate contributor. Similar vendor- and country-level patterns should be monitored when investigating future increases in delivery delays.
+
+4. **Consider shipment consolidation where operationally feasible**  
+   The shipment-size analysis across the full dataset showed substantially lower freight cost per unit for larger shipments, while larger shipments also had higher observed late-delivery rates. Shipment consolidation could therefore be considered where practical, but alongside appropriate delivery-risk controls rather than as an unconditional cost-saving measure.
+
+5. **Evaluate vendors using multiple operational measures**  
+   Vendor performance should be assessed using shipment volume, late-delivery rate, and freight-cost efficiency together. The analysis shows that a lower freight cost per unit does not necessarily correspond to a lower late-delivery rate, making single-metric vendor evaluation potentially misleading.
+
+6. **Assess vendor concentration and shipment-mode redundancy**  
+   The analysis identified substantial concentration of shipment activity among a small number of vendors, while most of the highest-volume vendors operated through a single shipment mode. This suggests that vendor concentration and limited mode redundancy should be considered when assessing operational resilience and potential disruption exposure.
+
+## Dashboards
+
+The analysis was presented through three interactive Tableau dashboards, each focused on a different operational perspective.
+
+### 1. Supply Chain Overview
+
+Provides an overall view of delivery performance, including delivery-status distribution, delivery variance, late-shipment severity, country-level risk, and delivery trends over time.
+
+### 2. Mode & Cost Analysis
+
+Examines delivery performance across shipment modes and the relationship between shipment size and freight-cost efficiency. Freight-cost comparisons are based on shipments with resolved freight-cost data.
+
+### 3. Vendor & Product Analysis
+
+Combines vendor-level operational comparison, vendor-by-shipment-mode performance, and ARV brand-level delivery risk to provide a more detailed view of vendor and product performance.
+
+The dashboards were developed in Tableau using the validated shipment-level dataset prepared in Excel.
+
+## Limitations
+
+The analysis has several limitations that should be considered when interpreting the results:
+
+- **Freight-cost availability:** Freight-cost analysis was limited to the **6,198 of 7,030 shipments (88.2%)** with resolved freight-cost data. The remaining 832 shipments were excluded from freight-cost calculations because their freight costs were either bundled into commodity costs or invoiced separately. Missing freight values were not treated as zero.
+
+- **Freight-cost derivation:** For shipments where multiple line items shared a single recorded freight charge, freight cost was resolved once at the shipment (ASN) level rather than duplicated across line items. The underlying references were validated to ensure that cross-referenced freight values resolved to the correct shipment. As a result, some freight-cost figures represent a shipment-level reconstruction rather than a directly itemized cost recorded independently for each line item.
+
+- **Shipment-level analysis:** The analysis uses the shipment/ASN level as the primary unit of analysis. Results therefore describe shipment-level operational patterns and should not be interpreted as independent observations of individual products, orders, or delivery routes.
+
+- **Reporting thresholds:** Minimum shipment thresholds were applied in several analyses to reduce the influence of very small groups. These thresholds are **reporting criteria rather than measures of statistical significance** and do not eliminate sampling or representativeness limitations.
+
+- **Small groups:** Some countries, vendors, brands, years, and shipment modes have relatively small shipment volumes. For example, the 2006 late-delivery rate was based on only **52 shipments**, while several ARV brands had fewer than 30 qualifying shipments. These results should therefore be interpreted cautiously.
+
+- **ARV brand segmentation:** The brand-level ARV analysis excluded **197 mixed-brand shipments**, leaving **5,275 single-brand shipments** for comparison. Brand was selected because it had the lowest proportion of mixed-value records among the segmentation fields tested, but this still means the analysis does not represent every ARV shipment.
+
+- **Shipment mode data quality:** The **N/A shipment mode** category was retained as a data-quality flag rather than interpreted as a genuine transportation mode. Its low observed late-delivery rate should therefore not be treated as evidence of superior performance.
+
+- **Association rather than causation:** The 2011 investigation identified **SCMS from RDC as the largest identified contributor to late shipments in that year**, but the analysis does not establish that the vendor caused the wider increase in late deliveries. Other factors, including the separate contribution observed in South Africa, were also present.
+
+- **Historical dataset:** The dataset covers shipments from **2006 to 2015**. The findings therefore describe historical supply-chain patterns within this dataset and may not directly represent current logistics conditions, costs, vendors, or delivery performance.
+
+- **Scope of analysis:** The project focuses on descriptive operational analysis using the available shipment, delivery, vendor, product, mode, and freight-cost fields. Factors not captured in the dataset, such as specific routes, customs events, weather, infrastructure conditions, or individual carrier performance, were not independently analysed.
