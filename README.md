@@ -108,9 +108,9 @@ Delivery performance differed substantially across shipment modes:
 - **Ocean** followed at **19.3%**.
 - **Air Charter** recorded a **10.5%** late-delivery rate.
 - **Air** recorded a lower late-delivery rate of **8.5%**.
-- Shipments with **N/A** as the recorded mode had a **1.3%** late-delivery rate.
+- Shipments with **N/A** as the recorded mode had a **1.3%** late-delivery rate, but this category was treated as a **data-quality flag rather than a meaningful shipment mode**.
 
-The results indicate that **Truck and Ocean shipments experienced the highest observed late-delivery rates**, while Air shipments showed considerably lower delay rates. These differences highlight shipment mode as an important area for further operational investigation.
+The results indicate that **Truck and Ocean shipments experienced the highest observed late-delivery rates**, while Air shipments showed considerably lower delay rates. The N/A category was excluded from meaningful mode-performance interpretation because it represents missing or unspecified shipment-mode information.
 
 ### Q4. Shipment Size and Freight-Cost Efficiency
 
@@ -125,6 +125,8 @@ Average total freight cost increased with shipment size, from **$2,758** for the
 Late-delivery rates also increased with shipment size, from **5.1%** in the smallest quartile to **17.9%** in the largest. This indicates a trade-off within this analysis: larger shipments were substantially more freight-efficient per unit but had higher observed late-delivery rates.
 
 Cost comparisons were limited to shipments with **available freight-cost data**, consistent with the approach used in Q3. Missing freight values were not treated as zero.
+
+**Validation note:** The shipment-size analysis was independently checked after an initial result produced an incorrect shipment population. The issue was traced to broken freight-cost references in the underlying Excel workbook, which caused some records to be excluded from the freight-resolved analysis. The source formulas were restored, the Tableau data source was reconnected, and the final results were re-verified using the corrected population of **6,198 freight-resolved shipments**.
 
 ### Q5. Vendor and Shipment Mode Interaction
 
@@ -179,6 +181,6 @@ The final vendor comparison combines shipment volume, late-delivery rate, and we
 - **S. Buys Wholesaler** recorded **194 shipments**, a **4.6% late-delivery rate**, and the lowest weighted freight cost per unit in the comparison at **$0.011**.
 - The remaining vendors showed different combinations of delivery reliability and freight cost, demonstrating that vendor performance cannot be described using a single operational measure.
 
-The comparison uses a **minimum threshold of 100 shipments per vendor** to focus on vendors with a meaningful level of shipment activity. Freight cost per unit was calculated using a **volume-weighted approach**, based on total freight cost divided by total shipment quantity, rather than averaging individual shipment-level cost-per-unit values.
+The comparison uses a **minimum reporting threshold of 100 shipments per vendor** to focus on vendors with a meaningful level of shipment activity. This threshold is a reporting criterion rather than a measure of statistical significance. Freight cost per unit was calculated using a **volume-weighted approach**, based on total freight cost divided by total shipment quantity, rather than averaging individual shipment-level cost-per-unit values. Freight-cost metrics were calculated using shipments with **resolved freight-cost data**; missing freight values were not treated as zero.
 
 The results highlight the importance of considering **shipment volume, delivery reliability, and freight efficiency together** when assessing vendor operations. A vendor with a lower freight cost per unit may still have a higher late-delivery rate, while a vendor with a lower late-delivery rate may operate at a substantially higher freight cost per unit.
