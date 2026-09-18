@@ -4,7 +4,7 @@ Supply chain and logistics performance analysis using Excel and Tableau, focused
 
 ## Business Problem
 
-Supply chain operations require a balance between delivery reliability, transportation cost, shipment size, vendor performance, and product availability.
+Supply chain operations require a balance between delivery reliability, transportation cost, shipment size, vendor performance, and product-level delivery risk.
 
 This project analyses historical shipment data to identify where delivery delays occur and how operational factors such as shipment mode, country, shipment size, vendor, and product characteristics relate to delivery performance and freight costs.
 
@@ -83,7 +83,7 @@ Delivery performance across the 7,030 shipment-level records was predominantly p
 - **63.29%** of shipments were delivered **On Time**.
 - **25.28%** were delivered **Early**.
 - **11.44%** were delivered **Late**.
-
+- The average delivery variance was **-4.8 days**, while late shipments had an average delay of **20.0 days** and a median delay of **12.0 days**.
 Although the majority of shipments met or beat their scheduled delivery dates, **804 shipments were late**, indicating a meaningful level of delivery risk that warrants further investigation across countries, shipment modes, vendors, and product categories.
 
 ### Q2. Country Delivery Risk
@@ -260,3 +260,4 @@ supply-chain-logistics-analysis/
 ├── tableau/
 ├── data/
 └── images/
+```
