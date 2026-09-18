@@ -248,3 +248,15 @@ The analysis has several limitations that should be considered when interpreting
 - **Historical dataset:** The dataset covers shipments from **2006 to 2015**. The findings therefore describe historical supply-chain patterns within this dataset and may not directly represent current logistics conditions, costs, vendors, or delivery performance.
 
 - **Scope of analysis:** The project focuses on descriptive operational analysis using the available shipment, delivery, vendor, product, mode, and freight-cost fields. Factors not captured in the dataset, such as specific routes, customs events, weather, infrastructure conditions, or individual carrier performance, were not independently analysed.
+
+## Repository Structure
+
+```text
+supply-chain-logistics-analysis/
+├── README.md
+├── DATASET.md
+├── LICENSE
+├── excel/
+├── tableau/
+├── data/
+└── images/
